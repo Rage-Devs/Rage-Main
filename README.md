@@ -3,6 +3,7 @@
 # Rage Client
 
 <p align="center">
+  <img src="https://img.shields.io/github/downloads/Rage-Devs/Rage-Main/total?style=for-the-badge&logo=github&color=95e1d3" alt="Total Downloads"/>
   <img src="https://img.shields.io/github/commit-activity/m/Rage-Devs/Rage-Main?style=for-the-badge&logo=github&color=ff6b6b" alt="Commits"/>
   <img src="https://img.shields.io/github/issues/Rage-Devs/Rage-Main?style=for-the-badge&logo=github&color=4ecdc4" alt="Issues"/>
   <img src="https://img.shields.io/github/stars/Rage-Devs/Rage-Main?style=for-the-badge&logo=github&color=ffe66d" alt="Stars"/>
@@ -23,10 +24,9 @@ A powerful Minecraft client built with Fabric
 
 ## Requirements
 
-- Java 21 or higher
+- Java 21
 - Minecraft 1.21.9
-- Fabric Loader 0.15.0+
-- Fabric API
+- Fabric loader, API
 
 ## Building
 
