@@ -8,6 +8,7 @@ import ki.rage.client.util.IMinecraft;
 import ki.rage.feature.module.impl.movement.*;
 import ki.rage.feature.module.impl.player.*;
 import ki.rage.feature.module.impl.render.*;
+import ki.rage.feature.module.impl.misc.*;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.ArrayList;
@@ -24,7 +25,9 @@ public class ModuleManager implements IMinecraft {
                 new AutoSprint(),
                 new NoSlow(),
                 new FastPlace(),
-                new Step()
+                new Step(),
+                new ExtraTab(),
+                new AutoRespawn()
         );
     }
 
