@@ -4,6 +4,7 @@ import ki.rage.client.Client;
 import ki.rage.client.event.api.EventTarget;
 import ki.rage.client.event.impl.ChatEvent;
 import ki.rage.feature.command.impl.BindCommand;
+import ki.rage.feature.command.impl.ClearRamCommand;
 import ki.rage.feature.command.impl.ConfigCommand;
 import ki.rage.feature.command.impl.FriendCommand;
 import ki.rage.feature.command.impl.HelpCommand;
@@ -28,7 +29,8 @@ public class CommandManager {
                 new ConfigCommand(),
                 new FriendCommand(),
                 new MacroCommand(),
-                new BindCommand()
+                new BindCommand(),
+                new ClearRamCommand()
         );
     }
 
