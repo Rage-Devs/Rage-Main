@@ -9,6 +9,7 @@ import ki.rage.feature.module.impl.movement.*;
 import ki.rage.feature.module.impl.player.*;
 import ki.rage.feature.module.impl.render.*;
 import ki.rage.feature.module.impl.misc.*;
+import ki.rage.feature.module.impl.combat.*;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.ArrayList;
@@ -29,7 +30,8 @@ public class ModuleManager implements IMinecraft {
                 new ExtraTab(),
                 new AutoRespawn(),
                 new AutoLeave(),
-                new ScreenMove()
+                new ScreenMove(),
+                new Aura()
         );
     }
 
