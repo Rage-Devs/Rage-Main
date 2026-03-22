@@ -13,14 +13,14 @@ public class ShaderManager {
     public final ShaderProgram hsvSquare;
 
     public ShaderManager() {
-        this.roundedRect = new ShaderProgram("assets/rage/shaders/rect.vert", "assets/rage/shaders/rounded_rect.frag");
-        this.roundedRectOutline = new ShaderProgram("assets/rage/shaders/rect.vert", "assets/rage/shaders/rounded_rect_outline.frag");
-        this.text = new ShaderProgram("assets/rage/shaders/text.vert", "assets/rage/shaders/text.frag");
-        this.imageRounded = new ShaderProgram("assets/rage/shaders/image.vert", "assets/rage/shaders/image_rounded.frag");
-        this.blit = new ShaderProgram("assets/rage/shaders/quad.vert", "assets/rage/shaders/blit.frag");
-        this.blur = new ShaderProgram("assets/rage/shaders/quad.vert", "assets/rage/shaders/blur.frag");
-        this.texturedRoundedRect = new ShaderProgram("assets/rage/shaders/quad.vert", "assets/rage/shaders/textured_round_rect.frag");
-        this.hsvSquare = new ShaderProgram("assets/rage/shaders/quad.vert", "assets/rage/shaders/hsv_square.frag");
+        this.roundedRect = new ShaderProgram("assets/rage/shaders/vertex/rect.vert", "assets/rage/shaders/fragment/rounded_rect.frag");
+        this.roundedRectOutline = new ShaderProgram("assets/rage/shaders/vertex/rect.vert", "assets/rage/shaders/fragment/rounded_rect_outline.frag");
+        this.text = new ShaderProgram("assets/rage/shaders/vertex/text.vert", "assets/rage/shaders/fragment/text.frag");
+        this.imageRounded = new ShaderProgram("assets/rage/shaders/vertex/image.vert", "assets/rage/shaders/fragment/image_rounded.frag");
+        this.blit = new ShaderProgram("assets/rage/shaders/vertex/quad.vert", "assets/rage/shaders/fragment/blit.frag");
+        this.blur = new ShaderProgram("assets/rage/shaders/vertex/quad.vert", "assets/rage/shaders/fragment/blur.frag");
+        this.texturedRoundedRect = new ShaderProgram("assets/rage/shaders/vertex/quad.vert", "assets/rage/shaders/fragment/textured_round_rect.frag");
+        this.hsvSquare = new ShaderProgram("assets/rage/shaders/vertex/quad.vert", "assets/rage/shaders/fragment/hsv_square.frag");
     }
 
     public void delete() {
