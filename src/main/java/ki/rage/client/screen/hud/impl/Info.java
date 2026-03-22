@@ -4,7 +4,7 @@ import ki.rage.client.Client;
 import ki.rage.client.screen.hud.api.HudElement;
 import ki.rage.client.util.render.Render2D;
 import ki.rage.client.util.render.color.ColorUtil;
-import ki.rage.feature.module.impl.Interface;
+import ki.rage.feature.module.impl.render.Interface;
 
 public class Info extends HudElement {
     public Info() {

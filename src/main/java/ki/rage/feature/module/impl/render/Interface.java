@@ -1,4 +1,4 @@
-package ki.rage.feature.module.impl;
+package ki.rage.feature.module.impl.render;
 
 import ki.rage.feature.module.api.Category;
 import ki.rage.feature.module.api.Module;

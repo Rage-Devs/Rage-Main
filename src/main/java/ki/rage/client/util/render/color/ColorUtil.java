@@ -1,7 +1,7 @@
 package ki.rage.client.util.render.color;
 
 import ki.rage.client.Client;
-import ki.rage.feature.module.impl.Interface;
+import ki.rage.feature.module.impl.render.Interface;
 
 public final class ColorUtil {
     private static final ColorUtil DEFAULT_THEME = rgba(120, 160, 255, 255);

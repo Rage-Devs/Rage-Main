@@ -5,7 +5,7 @@ import ki.rage.client.screen.hud.api.HudElement;
 import ki.rage.client.util.render.Render2D;
 import ki.rage.client.util.render.color.ColorUtil;
 import ki.rage.feature.module.api.Module;
-import ki.rage.feature.module.impl.Interface;
+import ki.rage.feature.module.impl.render.Interface;
 
 import java.util.Comparator;
 import java.util.List;

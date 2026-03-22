@@ -1,4 +1,4 @@
-package ki.rage.feature.module.impl;
+package ki.rage.feature.module.impl.movement;
 
 import ki.rage.client.event.api.EventTarget;
 import ki.rage.client.event.impl.TickEvent;

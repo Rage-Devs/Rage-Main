@@ -5,7 +5,9 @@ import ki.rage.client.screen.gui.ClickGui;
 import ki.rage.client.event.api.EventTarget;
 import ki.rage.client.event.impl.KeyEvent;
 import ki.rage.client.util.IMinecraft;
-import ki.rage.feature.module.impl.*;
+import ki.rage.feature.module.impl.movement.*;
+import ki.rage.feature.module.impl.player.*;
+import ki.rage.feature.module.impl.render.*;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.ArrayList;
@@ -21,7 +23,8 @@ public class ModuleManager implements IMinecraft {
                 new Interface(),
                 new AutoSprint(),
                 new NoSlow(),
-                new FastPlace()
+                new FastPlace(),
+                new Step()
         );
     }
 

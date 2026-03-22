@@ -6,7 +6,7 @@ import ki.rage.client.event.impl.Render2DEvent;
 import ki.rage.client.screen.hud.impl.ArrayList;
 import ki.rage.client.screen.hud.impl.Info;
 import ki.rage.client.screen.hud.impl.Watermark;
-import ki.rage.feature.module.impl.Interface;
+import ki.rage.feature.module.impl.render.Interface;
 
 import java.util.List;
 
