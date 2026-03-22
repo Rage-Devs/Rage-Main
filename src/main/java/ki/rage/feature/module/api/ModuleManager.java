@@ -27,7 +27,8 @@ public class ModuleManager implements IMinecraft {
                 new FastPlace(),
                 new Step(),
                 new ExtraTab(),
-                new AutoRespawn()
+                new AutoRespawn(),
+                new AutoLeave()
         );
     }
 
