@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "rage",
+  "version": "${version}",
+  "name": "rage",
+  "description": "rage client",
+  "authors": ["burgerhack16"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ki.rage.client.Client"
+    ]
+  },
+  "mixins": [
+    "mixins.json"
+  ],
+  "accessWidener": "rage.accesswidener",
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
