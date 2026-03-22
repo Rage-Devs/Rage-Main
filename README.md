@@ -3,8 +3,8 @@
 # Rage Client
 
 <p align="center">
-  <img src="https://img.shields.io/github/downloads/Rage-Devs/Rage-Main/total?style=for-the-badge&logo=github&color=95e1d3" alt="Total Downloads"/>
   <img src="https://img.shields.io/github/commit-activity/m/Rage-Devs/Rage-Main?style=for-the-badge&logo=github&color=ff6b6b" alt="Commits"/>
+    <img src="https://img.shields.io/github/downloads/Rage-Devs/Rage-Main/total?style=for-the-badge&logo=github&color=95e1d3" alt="Total Downloads"/>
   <img src="https://img.shields.io/github/issues/Rage-Devs/Rage-Main?style=for-the-badge&logo=github&color=4ecdc4" alt="Issues"/>
   <img src="https://img.shields.io/github/stars/Rage-Devs/Rage-Main?style=for-the-badge&logo=github&color=ffe66d" alt="Stars"/>
   <img src="https://img.shields.io/github/license/Rage-Devs/Rage-Main?style=for-the-badge&color=a8e6cf" alt="License"/>
