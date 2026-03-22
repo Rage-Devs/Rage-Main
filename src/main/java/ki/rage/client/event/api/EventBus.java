@@ -1,57 +1,60 @@
 package ki.rage.client.event.api;
 
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+// крашил иногда т.к не было так называемой потокобезопасности
 
 public class EventBus {
-    private final Map<Class<? extends Event>, List<MethodData>> listeners = new HashMap<>();
+    private final Map<Class<?>, List<EventSubscriber>> subscribers = new ConcurrentHashMap<>();
 
-    public void register(Object obj) {
-        for (Method method : obj.getClass().getDeclaredMethods()) {
-            if (!method.isAnnotationPresent(EventTarget.class)) {
-                continue;
+    public void register(Object listener) {
+        for (Method method : listener.getClass().getDeclaredMethods()) {
+            if (method.isAnnotationPresent(EventTarget.class) && method.getParameterCount() == 1) {
+                method.setAccessible(true);
+                Class<?> eventType = method.getParameterTypes()[0];
+                subscribers.computeIfAbsent(eventType, k -> new CopyOnWriteArrayList<>())
+                        .add(new EventSubscriber(listener, method));
             }
-            if (method.getParameterCount() != 1) {
-                continue;
-            }
-            Class<?> eventClass = method.getParameterTypes()[0];
-            if (!Event.class.isAssignableFrom(eventClass)) {
-                continue;
-            }
-            method.setAccessible(true);
-            listeners.computeIfAbsent((Class<? extends Event>) eventClass, k -> new ArrayList<>())
-                    .add(new MethodData(obj, method));
         }
     }
 
-    public void unregister(Object obj) {
-        listeners.values().forEach(list -> list.removeIf(data -> data.instance == obj));
+    public void unregister(Object listener) {
+        for (List<EventSubscriber> list : subscribers.values()) {
+            list.removeIf(sub -> sub.getListener() == listener);
+        }
     }
 
-    public void post(Event event) {
-        List<MethodData> list = listeners.get(event.getClass());
-        if (list == null) {
-            return;
-        }
-        for (MethodData data : list) {
+    public void post(Object event) {
+        List<EventSubscriber> list = subscribers.get(event.getClass());
+        if (list == null) return;
+        for (EventSubscriber sub : list) {
             try {
-                data.method.invoke(data.instance, event);
+                sub.getMethod().invoke(sub.getListener(), event);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
     }
 
-    private static class MethodData {
-        final Object instance;
-        final Method method;
+    private static class EventSubscriber {
+        private final Object listener;
+        private final Method method;
 
-        MethodData(Object instance, Method method) {
-            this.instance = instance;
+        public EventSubscriber(Object listener, Method method) {
+            this.listener = listener;
             this.method = method;
+        }
+
+        public Object getListener() {
+            return listener;
+        }
+
+        public Method getMethod() {
+            return method;
         }
     }
 }
