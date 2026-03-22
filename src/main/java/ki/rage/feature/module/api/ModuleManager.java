@@ -28,7 +28,8 @@ public class ModuleManager implements IMinecraft {
                 new Step(),
                 new ExtraTab(),
                 new AutoRespawn(),
-                new AutoLeave()
+                new AutoLeave(),
+                new ScreenMove()
         );
     }
 
