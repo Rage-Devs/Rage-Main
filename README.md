@@ -11,50 +11,64 @@
 
 <p align="center">
   <a href="https://discord.gg/ctWFbJ7f">
-    <img src="https://img.shields.io/discord/1485004275628118309?style=for-the-badge&logo=discord&logoColor=white&label=Discord&color=5865F2" alt="Discord"/>
+    <img src="https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/>
   </a>
 </p>
 
+A powerful Minecraft client built with Fabric
+
 </div>
 
-A powerful Minecraft client built with Fabric.
+---
 
 ## Requirements
 
-- Java 21+
+- Java 21 or higher
 - Minecraft 1.21.9
-- Fabric loader, API
+- Fabric Loader 0.15.0+
+- Fabric API
 
 ## Building
 
+Clone the repository and build:
+
 ```bash
+git clone https://github.com/Rage-Devs/Rage-Main.git
+cd Rage-Main
 ./gradlew build
 ```
 
-The compiled JAR will be in `build/libs/`
+Output JAR: `build/libs/rage-client.jar`
 
 ## Installation
 
-1. Install [Fabric Loader](https://fabricmc.net/use/)
-2. Download the latest release
-3. Place the JAR in your `.minecraft/mods` folder
+1. Install [Fabric Loader](https://fabricmc.net/use/) for Minecraft 1.21.9
+2. Download the latest release from [Releases](https://github.com/Rage-Devs/Rage-Main/releases)
+3. Place JAR in `.minecraft/mods/`
 4. Launch Minecraft with Fabric profile
 
 ## Usage
 
-- Press `Right Shift` to open ClickGUI
-- Use `.help` in chat for command list
-- Configure modules in the GUI
-
-## Discord
-
-Join our Discord server for support and updates:
-[Discord Invite](https://discord.gg/ctWFbJ7f)
+**Controls**
+- `Right Shift` - Open ClickGUI
+- `.help` - List all commands in chat
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first.
+Contributions are welcome. Please open an issue before submitting major changes.
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a pull request
 
 ## License
 
-[MIT](LICENSE)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Discord
+
+Join our community for support, updates, and discussions:
+
+[Discord Server](https://discord.gg/ctWFbJ7f)
