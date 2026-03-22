@@ -5,6 +5,7 @@ import ki.rage.client.file.ConfigManager;
 import ki.rage.client.file.FriendManager;
 import ki.rage.client.file.MacroManager;
 import ki.rage.client.screen.hud.api.HudManager;
+import ki.rage.client.util.IMinecraft;
 import ki.rage.feature.command.api.CommandManager;
 import ki.rage.feature.module.api.ModuleManager;
 import lombok.Getter;
@@ -13,7 +14,7 @@ import net.fabricmc.api.ClientModInitializer;
 // young money 2010
 
 @Getter
-public class Client implements ClientModInitializer {
+public class Client implements ClientModInitializer, IMinecraft {
     @Getter
     private static Client instance;
 
