@@ -2,12 +2,18 @@
 
 # Rage Client
 
-[![Commits](https://img.shields.io/github/commit-activity/m/Rage-Devs/Rage-Main?style=flat-square&color=blue)](https://github.com/Rage-Devs/Rage-Main/commits)
-[![Issues](https://img.shields.io/github/issues/Rage-Devs/Rage-Main?style=flat-square&color=green)](https://github.com/Rage-Devs/Rage-Main/issues)
-[![Stars](https://img.shields.io/github/stars/Rage-Devs/Rage-Main?style=flat-square&color=yellow)](https://github.com/Rage-Devs/Rage-Main/stargazers)
-[![License](https://img.shields.io/github/license/Rage-Devs/Rage-Main?style=flat-square)](LICENSE)
+<p align="center">
+  <img src="https://img.shields.io/github/commit-activity/m/Rage-Devs/Rage-Main?style=for-the-badge&logo=github&color=ff6b6b" alt="Commits"/>
+  <img src="https://img.shields.io/github/issues/Rage-Devs/Rage-Main?style=for-the-badge&logo=github&color=4ecdc4" alt="Issues"/>
+  <img src="https://img.shields.io/github/stars/Rage-Devs/Rage-Main?style=for-the-badge&logo=github&color=ffe66d" alt="Stars"/>
+  <img src="https://img.shields.io/github/license/Rage-Devs/Rage-Main?style=for-the-badge&color=a8e6cf" alt="License"/>
+</p>
 
-[![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/ctWFbJ7f)
+<p align="center">
+  <a href="https://discord.gg/ctWFbJ7f">
+    <img src="https://img.shields.io/discord/1485004275628118309?style=for-the-badge&logo=discord&logoColor=white&label=Discord&color=5865F2" alt="Discord"/>
+  </a>
+</p>
 
 </div>
 
