@@ -1,11 +1,15 @@
+<div align="center">
+
 # Rage Client
 
-![Commits](https://img.shields.io/github/commit-activity/m/Rage-Devs/Rage-Main?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/Rage-Devs/Rage-Main?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/Rage-Devs/Rage-Main?style=for-the-badge)
-![License](https://img.shields.io/github/license/Rage-Devs/Rage-Main?style=for-the-badge)
+[![Commits](https://img.shields.io/github/commit-activity/m/Rage-Devs/Rage-Main?style=flat-square&color=blue)](https://github.com/Rage-Devs/Rage-Main/commits)
+[![Issues](https://img.shields.io/github/issues/Rage-Devs/Rage-Main?style=flat-square&color=green)](https://github.com/Rage-Devs/Rage-Main/issues)
+[![Stars](https://img.shields.io/github/stars/Rage-Devs/Rage-Main?style=flat-square&color=yellow)](https://github.com/Rage-Devs/Rage-Main/stargazers)
+[![License](https://img.shields.io/github/license/Rage-Devs/Rage-Main?style=flat-square)](LICENSE)
 
-[![Discord](https://img.shields.io/discord/1485004275628118309?color=7289da&label=Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/ctWFbJ7f)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/ctWFbJ7f)
+
+</div>
 
 A powerful Minecraft client built with Fabric.
 
